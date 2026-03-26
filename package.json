@@ -1,0 +1,25 @@
+{
+  "name": "openrouter-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": {
+    "openrouter-cli": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "cli": "tsx src/cli.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:integration": "vitest run --reporter=verbose src/client.integration.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.15",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "dependencies": {
+    "commander": "^14.0.3",
+    "dotenv": "^16.4.0",
+    "tsx": "^4.21.0"
+  }
+}
